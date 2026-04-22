@@ -1,5 +1,3 @@
-$ErrorActionPreference = "Stop"
-
 $GitHubRepo = "Lafferrr/SSTools"
 $Branch = "main"
 $SourceFolderInRepo = "SSTools"
@@ -44,27 +42,3 @@ Copy-Item -Path "$sourceSSToolsFolder\*" -Destination $DestinationFolder -Recurs
 Remove-Item -Path $tempDir -Recurse -Force -ErrorAction SilentlyContinue
 
 Write-Host "Completed! Tools now in $DestinationFolder" -ForegroundColor Green
-
-$net8Installed = $false
-try {
-    $output = dotnet --list-runtimes 2>$null | Select-String "Microsoft.WindowsDesktop.App 8\."
-    if ($output) { $net8Installed = $true }
-} catch {}
-
-if (-not $net8Installed) {
-    Write-Host "Installing .NET 8 Desktop Runtime..." -ForegroundColor Yellow
-    $installerUrl = "https://download.visualstudio.microsoft.com/download/pr/2d4f4f4f-4f4f-4f4f-4f4f-4f4f4f4f4f4f/4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f/windowsdesktop-runtime-8.0.14-win-x64.exe"
-    $installerPath = "$env:TEMP\dotnet-runtime-8.exe"
-    Invoke-WebRequest -Uri $installerUrl -OutFile $installerPath -UseBasicParsing
-    Start-Process -FilePath $installerPath -ArgumentList "/quiet /norestart" -Wait
-    Remove-Item $installerPath -Force
-}
-
-$exePath = Join-Path $DestinationFolder "MacroScanner\MacroScanner.exe"
-if (-not (Test-Path $exePath)) {
-    Write-Error "MacroScanner.exe not found at $exePath"
-    exit 1
-}
-
-Unblock-File $exePath
-Start-Process -FilePath $exePath -Verb RunAs
