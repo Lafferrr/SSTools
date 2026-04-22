@@ -60,9 +60,10 @@ if (-not $net8Installed) {
     Remove-Item $installerPath -Force
 }
 
-$exePath = Join-Path $DestinationFolder "MacroScanner.exe"
-if (-not (Test-Path $exePath)) {
-    Write-Error "MacroScanner.exe not found at $exePath"
+$exePath = Get-ChildItem -Path $DestinationFolder -Filter "MacroScanner.exe" -Recurse -ErrorAction SilentlyContinue | Select-Object -First 1 -ExpandProperty FullName
+
+if (-not $exePath) {
+    Write-Error "MacroScanner.exe not found anywhere in $DestinationFolder"
     exit 1
 }
 
