@@ -1,0 +1,1347 @@
+{
+    "detection": {
+        "scoreThreshold": 1,
+        "maxFileSizeKb": 2048,
+        "firstBytesKb": 20
+    },
+    "extensions": [
+        ".ahk",
+        ".au3",
+        ".py",
+        ".pyw",
+        ".js",
+        ".vbs",
+        ".ps1",
+        ".amc2",
+        ".cuecfg",
+        ".mcr",
+        ".kbs",
+        ".lua",
+        ".ts",
+        ".user.js",
+        ".scpt",
+        ".applescript",
+        ".sh",
+        ".cs",
+        ".java",
+        ".pl",
+        ".rb",
+        ".rs",
+        ".go",
+        ".nim",
+        ".dart",
+        ".kt",
+        ".swift",
+        ".m",
+        ".R",
+        ".r",
+        ".c",
+        ".cpp",
+        ".hs",
+        ".scala",
+        ".clj",
+        ".ex",
+        ".exs",
+        ".php",
+        ".tcl",
+        ".groovy",
+        ".fs",
+        ".adb",
+        ".pas",
+        ".pb",
+        ".vi",
+        ".uasset",
+        ".sb3",
+        ".xml",
+        ".xaml",
+        ".atmx",
+        ".bprelease",
+        ".rxrec",
+        ".tcs",
+        ".script",
+        ".sikuli",
+        ".pmc",
+        ".ttm",
+        ".qml",
+        ".mxe",
+        ".kmmacros",
+        ".bttpreset",
+        ".bttp",
+        ".json",
+        ".ino",
+        ".hex",
+        ".act",
+        ".xnr",
+        ".xbindkeysrc",
+        ".sxhkdrc",
+        ".wsf",
+        ".hta",
+        ".wbt",
+        ".kix",
+        ".rex",
+        ".awk",
+        ".sed",
+        ".exp",
+        ".lisp",
+        ".rkt",
+        ".erl",
+        ".ml",
+        ".vala",
+        ".gs",
+        ".d",
+        ".zig",
+        ".v",
+        ".jl",
+        ".cr",
+        ".pony",
+        ".as",
+        ".hx",
+        ".elm",
+        ".purs",
+        ".re",
+        ".res",
+        ".cljs",
+        ".coffee",
+        ".ls",
+        ".pkl",
+        ".dhall",
+        ".nix",
+        ".scm",
+        ".st",
+        ".io",
+        ".self",
+        ".factor",
+        ".logo",
+        ".cbl",
+        ".cob",
+        ".f90",
+        ".f95",
+        ".alg",
+        ".pli",
+        ".rpg",
+        ".jcl",
+        ".cl",
+        ".cu",
+        ".vhd",
+        ".sv",
+        ".abap",
+        ".cls",
+        ".sol",
+        ".vy",
+        ".mod",
+        ".ob",
+        ".sim",
+        ".bcpl",
+        ".bli",
+        ".plm",
+        ".jov",
+        ".cms",
+        ".tacl",
+        ".com",
+        ".exec",
+        ".toe",
+        ".v4p",
+        ".maxpat",
+        ".pd",
+        ".scd",
+        ".pde"
+    ],
+    "portableNamePatterns": [
+        "macro",
+        "autoclick",
+        "auto_click",
+        "autoclicker",
+        "bhop",
+        "bunny",
+        "triggerbot",
+        "aimbot",
+        "clicker",
+        "scripter",
+        "keypress",
+        "hotkey",
+        "rapidfire",
+        "rapid_fire",
+        "turbo",
+        "spammer",
+        "inputbot",
+        "keysender",
+        "mousebot",
+        "autofire",
+        "jitter",
+        "recoil",
+        "noRecoil",
+        "rapidtap",
+        "fastclick",
+        "autohotkey",
+        "tinytask"
+    ],
+    "fileWhitelist": [
+        "node_modules",
+        "webpack.config.js",
+        "jest.config.js",
+        "babel.config.js",
+        ".eslintrc.js",
+        "vite.config.js",
+        "rollup.config.js",
+        "tailwind.config.js",
+        "next.config.js",
+        "nuxt.config.js",
+        "Gruntfile.js",
+        "gulpfile.js"
+    ],
+    "installedSoftwareTargets": [
+        {
+            "name": "AutoHotkey",
+            "score": 8
+        },
+        {
+            "name": "AutoIt",
+            "score": 8
+        },
+        {
+            "name": "TinyTask",
+            "score": 10
+        },
+        {
+            "name": "198Macros",
+            "score": 7
+        },
+        {
+            "name": "ZenithMacros",
+            "score": 7
+        },
+        {
+            "name": "JitBit Macro",
+            "score": 8
+        },
+        {
+            "name": "Macro Recorder",
+            "score": 7
+        },
+        {
+            "name": "GS Auto Clicker",
+            "score": 6
+        },
+        {
+            "name": "OP Auto Clicker",
+            "score": 6
+        },
+        {
+            "name": "Pulover",
+            "score": 8
+        },
+        {
+            "name": "InputDirector",
+            "score": 5
+        },
+        {
+            "name": "Glorious Core",
+            "score": 5
+        },
+        {
+            "name": "MacroGamer",
+            "score": 7
+        },
+        {
+            "name": "Clickermann",
+            "score": 6
+        },
+        {
+            "name": "AutoMacro",
+            "score": 7
+        },
+        {
+            "name": "Perfect Macro",
+            "score": 7
+        },
+        {
+            "name": "Macro Expert",
+            "score": 7
+        },
+        {
+            "name": "Easy Macro",
+            "score": 6
+        },
+        {
+            "name": "KeymouseGo",
+            "score": 6
+        },
+        {
+            "name": "CrossMacro",
+            "score": 6
+        },
+        {
+            "name": "X-Mouse Button Control",
+            "score": 5
+        },
+        {
+            "name": "Karabiner",
+            "score": 5
+        },
+        {
+            "name": "Hammerspoon",
+            "score": 5
+        },
+        {
+            "name": "Keyboard Maestro",
+            "score": 7
+        },
+        {
+            "name": "BetterTouchTool",
+            "score": 5
+        },
+        {
+            "name": "Keymapper",
+            "score": 5
+        },
+        {
+            "name": "uTools",
+            "score": 4
+        },
+        {
+            "name": "KeyCap",
+            "score": 4
+        },
+        {
+            "name": "Actiona",
+            "score": 6
+        },
+        {
+            "name": "AutoClicker",
+            "score": 5
+        },
+        {
+            "name": "Auto Clicker",
+            "score": 5
+        },
+        {
+            "name": "FastKeys",
+            "score": 6
+        },
+        {
+            "name": "reWASD",
+            "score": 6
+        },
+        {
+            "name": "xdotool",
+            "score": 5
+        },
+        {
+            "name": "Sikuli",
+            "score": 6
+        }
+    ],
+    "suspiciousProcessNames": [
+        "autohotkey",
+        "autoit3",
+        "autoitv3",
+        "tinytask",
+        "macrorecorder",
+        "jitbitmacro",
+        "gsautoclicker",
+        "opautoclicker",
+        "autoclicker",
+        "pulover",
+        "macrocreator",
+        "xdotool",
+        "sikuli",
+        "keymousego",
+        "crossmacro",
+        "xmousebuttoncontrol",
+        "karabiner",
+        "hammerspoon",
+        "keyboardmaestro",
+        "bettertouchtool",
+        "keymapper",
+        "utools",
+        "keycap",
+        "actiona",
+        "clickbot",
+        "jitterclick",
+        "triggerbot",
+        "bhopscript",
+        "recoilscript",
+        "rapidclicker",
+        "joy2key",
+        "antimicro",
+        "rewasd",
+        "inputmapper",
+        "xpadder",
+        "ds4windows",
+        "198macros",
+        "zenithmacros"
+    ],
+    "vendorFolders": {
+        "Glorious": [
+            "SEARCH_FOR_FOLDER:BY-COMBO2",
+            "%APPDATA%\\GloriousModel",
+            "%PROGRAMDATA%\\Glorious"
+        ],
+        "SteelSeries": [
+            "SEARCH_FOR_FOLDER:steelseries-engine-3-client",
+            "%APPDATA%\\SteelSeries Engine 3",
+            "%PROGRAMDATA%\\SteelSeries",
+            "%LOCALAPPDATA%\\SteelSeries"
+        ],
+        "Razer": [
+            "SEARCH_FOR_FOLDER:Razer",
+            "%PROGRAMDATA%\\Razer\\Synapse3",
+            "%LOCALAPPDATA%\\Razer"
+        ],
+        "Logitech": [
+            "SEARCH_FOR_FOLDER:Logitech",
+            "%PROGRAMDATA%\\LGHUB",
+            "%LOCALAPPDATA%\\LGHUB",
+            "%APPDATA%\\Logitech Gaming Software"
+        ],
+        "ROCCAT": [
+            "SEARCH_FOR_FOLDER:ROCCAT",
+            "%APPDATA%\\ROCCAT",
+            "%PROGRAMDATA%\\ROCCAT"
+        ],
+        "Cooler Master": [
+            "SEARCH_FOR_FOLDER:CoolerMaster",
+            "%PROGRAMDATA%\\Cooler Master\\MasterPlus"
+        ],
+        "Bloody": [
+            "SEARCH_FOR_FOLDER:Bloody7",
+            "%PROGRAMDATA%\\Bloody"
+        ],
+        "AYAX": [
+            "SEARCH_FOR_FOLDER:AYAX GamingMouse"
+        ],
+        "ASUS": [
+            "SEARCH_FOR_FOLDER:ASUS",
+            "%PROGRAMDATA%\\ASUS\\ROG",
+            "%APPDATA%\\ASUS"
+        ],
+        "Corsair": [
+            "SEARCH_FOR_FOLDER:Corsair",
+            "%PROGRAMDATA%\\Corsair\\iCUE",
+            "%LOCALAPPDATA%\\iCUE"
+        ],
+        "HyperX": [
+            "SEARCH_FOR_FOLDER:HyperX",
+            "%APPDATA%\\HyperX NGenuity"
+        ],
+        "Pulsar": [
+            "SEARCH_FOR_FOLDER:Pulsar",
+            "%APPDATA%\\Pulsar Gaming Gear"
+        ],
+        "Wooting": [
+            "SEARCH_FOR_FOLDER:Wooting",
+            "%APPDATA%\\Wooting"
+        ],
+        "MSI": [
+            "SEARCH_FOR_FOLDER:MSI Center",
+            "%PROGRAMDATA%\\MSI\\Dragon Center"
+        ],
+        "198Macros": [
+            "SEARCH_FOR_FOLDER:198Macros",
+            "%PROGRAMFILES%\\198Macros",
+            "%APPDATA%\\198Macros",
+            "%LOCALAPPDATA%\\198Macros"
+        ],
+        "ZenithMacros": [
+            "SEARCH_FOR_FOLDER:ZenithMacros",
+            "%PROGRAMFILES%\\ZenithMacros",
+            "%APPDATA%\\ZenithMacros",
+            "%LOCALAPPDATA%\\ZenithMacros"
+        ]
+    },
+    "vendorIndicators": {
+        "Glorious": [ "macro", "sequence", "keyAction", "mouseAction", "profile" ],
+        "SteelSeries": [ "macro", "profile", "binding", "action", "haptic" ],
+        "Razer": [ "macro", "profile", "binding", "chroma", "synapse" ],
+        "Logitech": [ "macro", "profile", "binding", "gshift", "lghub", "gkey" ],
+        "ROCCAT": [ "macro", "profile", "button", "assign" ],
+        "Corsair": [ "RecMouseClicksEnable", "MacroKey", "ActionType", "macro" ],
+        "ASUS": [ "macro", "profile", "binding", "armory", "aura" ],
+        "Cooler Master": [ "macro", "profile", "binding", "lighting" ],
+        "Bloody": [ "macro", "profile", "fire", "assign" ],
+        "HyperX": [ "macro", "profile", "binding", "ngenuity" ],
+        "Pulsar": [ "macro", "profile", "dpi", "polling" ],
+        "Wooting": [ "macro", "profile", "analog", "wootility" ],
+        "198Macros": [ "macro", "sequence", "hotkey", "profile", "198" ],
+        "ZenithMacros": [ "macro", "sequence", "hotkey", "profile", "zenith" ]
+    },
+    "pathExclusions": [
+        "node_modules",
+        "\\.git\\",
+        "\\$Recycle.Bin\\",
+        "\\Windows\\SysWOW64\\",
+        "\\Windows\\WinSxS\\",
+        "\\Program Files\\WindowsApps\\Microsoft.",
+        "\\AppData\\Local\\Microsoft\\Edge\\",
+        "\\AppData\\Local\\Google\\Chrome\\",
+        "\\AppData\\Local\\BraveSoftware\\",
+        "\\AppData\\Local\\Mozilla\\",
+        "\\AppData\\Roaming\\Code\\extensions\\",
+        "\\AppData\\Roaming\\npm\\",
+        "\\AppData\\Local\\npm-cache\\",
+        "\\.vscode\\",
+        "\\dist\\",
+        "\\build\\",
+        "\\AppData\\Local\\Temp\\Low\\",
+        "\\Windows\\SoftwareDistribution\\",
+        "\\AppData\\Roaming\\Code\\User\\History\\",
+        "\\AppData\\Roaming\\Windsurf\\User\\History\\",
+        "\\AppData\\Roaming\\Python\\Python314\\site-packages\\",
+        "\\AppData\\Roaming\\Python\\Python313\\site-packages\\",
+        "\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\test\\",
+        "\\Python314\\Lib\\test\\",
+        "\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\idlelib\\",
+        "\\Python314\\Lib\\idlelib\\",
+        "\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\_pyrepl\\",
+        "\\Python314\\Lib\\_pyrepl\\",
+        "\\bundled\\libs\\debugpy\\_vendored\\pydevd\\",
+        "\\.cursor\\extensions\\ms-python.debugpy-",
+        "\\.cursor\\extensions\\ms-python.python-",
+        "\\.windsurf\\extensions\\ms-python.debugpy-",
+        "\\.windsurf\\extensions\\ms-python.python-"
+    ],
+    "pathBonuses": [
+        {
+            "pattern": "Desktop",
+            "score": 2
+        },
+        {
+            "pattern": "Downloads",
+            "score": 2
+        },
+        {
+            "pattern": "Documents",
+            "score": 1
+        },
+        {
+            "pattern": "Startup",
+            "score": 4
+        },
+        {
+            "pattern": "Start Menu",
+            "score": 4
+        },
+        {
+            "pattern": "AppData",
+            "score": 1
+        },
+        {
+            "pattern": "Games",
+            "score": 1
+        }
+    ],
+    "keywordSets": {
+        ".ahk": {
+            "keywords": [ "Send", "SendInput", "SendRaw", "SendPlay", "SendEvent", "SendMode", "Click", "MouseClick", "MouseClickDrag", "MouseMove", "MouseGetPos", "SetMouseDelay", "SetKeyDelay", "SetDefaultMouseSpeed", "Loop", "Sleep", "GetKeyState", "KeyWait", "Hotkey", "ControlClick", "ControlSend", "PostMessage", "SendMessage", "BlockInput", "KeyHistory", "ListHotkeys", "#InstallKeybdHook", "#InstallMouseHook", "#UseHook", "InputHook", "DllCall", "NumPut", "RegisterCallback", "OnMessage", "WinActivate", "WinWait", "WinExist", "SetTimer" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".au3": {
+            "keywords": [ "MouseClick", "MouseClickDrag", "MouseMove", "MouseDown", "MouseUp", "Send", "ControlSend", "WinActivate", "Sleep", "HotKeySet", "AdlibRegister", "BlockInput", "DllCall", "DllOpen", "GUICreate" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".py": {
+            "keywords": [ "pyautogui", "pydirectinput", "pynput", "from pynput", "keyboard.press", "keyboard.release", "keyboard.send", "keyboard.write", "mouse.click", "mouse.move", "mouse.press", "mouse.release", "mouse.wheel", "SendInput", "keybd_event", "mouse_event", "ctypes.windll", "win32api", "win32con", "windll", "GetAsyncKeyState", "SetCursorPos", "preciseSleep", ".pressed(", "press(", "release(", "rightClick", "contextmenu", "sendkeys" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".pyw": {
+            "keywords": [ "pyautogui", "pydirectinput", "pynput", "from pynput", "keyboard.press", "keyboard.release", "keyboard.send", "keyboard.write", "mouse.click", "mouse.move", "mouse.press", "mouse.release", "mouse.wheel", "SendInput", "keybd_event", "mouse_event", "ctypes.windll", "win32api", "win32con", "windll", "GetAsyncKeyState", "SetCursorPos", "preciseSleep", ".pressed(", "press(", "release(" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".js": {
+            "keywords": [ "robotjs", "robot.keyTap", "mouseClick", "keyTap", "SendInput", "sendkeys", "keyToggle", "typeString", "pressKey", "rightClick", "contextmenu", "button:2", "contextclick", "robot.mouseClick", "robot.keyToggle", "dispatchEvent" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".ts": {
+            "keywords": [ "robotjs", "robot.keyTap", "mouseClick", "keyTap", "SendInput", "sendkeys", "keyToggle", "typeString", "pressKey", "rightClick", "contextmenu", "button:2", "contextclick", "robot.mouseClick", "robot.keyToggle", "dispatchEvent" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".lua": {
+            "keywords": [ "PressAndReleaseKey", "PressKey", "ReleaseKey", "PressMouseButton", "ReleaseMouseButton", "MouseClick", "PlayMacro", "rightClick" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".vbs": {
+            "keywords": [ "WshShell.SendKeys", "SendKeys", "{g}", "{APPSKEY}", "+{F10}" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".ps1": {
+            "keywords": [ "SendKeys.SendWait", "SendKeys.Send", "WScript.Shell", "mouse_event", "MOUSEEVENTF_RIGHTDOWN", "MOUSEEVENTF_RIGHTUP", "Add-Type", "SendInput", "keybd_event" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".sh": {
+            "keywords": [ "xdotool key", "xdotool click", "xte", "cliclick", "ydotool key", "ydotool click" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".cs": {
+            "keywords": [ "SendKeys.SendWait", "SendKeys.Send", "InputSimulator.Keyboard.KeyPress", "keybd_event", "mouse_event", "MOUSEEVENTF_RIGHTDOWN", "MOUSEEVENTF_RIGHTUP", "SendInput", "SimulateKeyPress", "RightButtonClick" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".java": {
+            "keywords": [ "java.awt.Robot", "keyPress", "keyRelease", "mousePress", "mouseRelease", "BUTTON3_DOWN_MASK", "BUTTON3_MASK", "Actions.sendKeys", "Actions.contextClick", "contextClick", "rightClick" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".pl": {
+            "keywords": [ "Win32::GuiTest::SendKeys", "RightClick", "RightClickMouse", "ClickMouseButton", "send_keys" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".rb": {
+            "keywords": [ "Win32API.new", "keybd_event", "mouse_event", "auto_click.key_press", "auto_click.right_click", "xdo.key", "xdo.click", "win32ole", "WScript.Shell.SendKeys" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".rs": {
+            "keywords": [ "enigo::KeyboardControllable::key_click", "enigo::MouseControllable::mouse_click", "mki::simulate::key_press", "inputbot::KeyboardControllable::key_click", "inputbot::MouseControllable::mouse_click", "rightClick" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".go": {
+            "keywords": [ "robotgo.KeyTap", "robotgo.KeyToggle", "robotgo.TypeStr", "robotgo.Click", "robotgo.MouseToggle", "rightClick" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".nim": {
+            "keywords": [ "pyautogui", "pynput", "keybd_event", "mouse_event", "XTestFakeKeyEvent", "XTestFakeButtonEvent", "rightClick" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".dart": {
+            "keywords": [ "bixat_key_mouse.keyPress", "bixat_key_mouse.keyTap", "bixat_key_mouse.rightClick", "bixat_key_mouse.mouseClick", "uiohook_dart.sendKeyData", "uiohook_dart.sendMouseData", "flutter_auto_gui.pressKey" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".kt": {
+            "keywords": [ "java.awt.Robot", "keyPress", "keyRelease", "mousePress", "mouseRelease", "BUTTON3_DOWN_MASK" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".swift": {
+            "keywords": [ "CGEvent(keyboardEventSource:", "CGEvent(mouseEventSource:", "SwiftAutoGUI.keyDown", "SwiftAutoGUI.rightClick", "NSEvent.keyEvent", "NSEvent.mouseEvent", "rightMouseDown" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".m": {
+            "keywords": [ "java.awt.Robot", "keyPress", "keyRelease", "mousePress", "mouseRelease", "BUTTON3_MASK", "InputEvent.BUTTON3_MASK", "rightClick" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".R": {
+            "keywords": [ "KeyboardSimulator::keybd.press", "KeyboardSimulator::mouse.click", "KeyboardSimulator::mouse.press", "KeyboardSimulator::mouse.release", "keybd.press", "mouse.click", "rightClick" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".c": {
+            "keywords": [ "keybd_event", "SendInput", "INPUT_KEYBOARD", "XTestFakeKeyEvent", "uinput", "CGEventCreateKeyboardEvent", "mouse_event", "MOUSEEVENTF_RIGHTDOWN", "MOUSEEVENTF_RIGHTUP", "XTestFakeButtonEvent", "CGEventCreateMouseEvent" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".cpp": {
+            "keywords": [ "keybd_event", "SendInput", "INPUT_KEYBOARD", "XTestFakeKeyEvent", "uinput", "CGEventCreateKeyboardEvent", "mouse_event", "MOUSEEVENTF_RIGHTDOWN", "MOUSEEVENTF_RIGHTUP", "XTestFakeButtonEvent", "CGEventCreateMouseEvent" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".hs": {
+            "keywords": [ "System.Win32.KeybdInput.keybdEvent", "X11.XTest.fakeKeyEvent", "System.Win32.MouseInput.mouseEvent", "mOUSEEVENTF_RIGHTDOWN", "mOUSEEVENTF_RIGHTUP" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".scala": {
+            "keywords": [ "java.awt.Robot", "keyPress", "keyRelease", "mousePress", "mouseRelease", "BUTTON3_DOWN_MASK" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".clj": {
+            "keywords": [ "java.awt.Robot", "keyPress", "keyRelease", "mousePress", "mouseRelease", "BUTTON3_DOWN_MASK" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".ex": {
+            "keywords": [ ":os.cmd('xdotool", "System.cmd(\"xdotool\"", ":erlang.spawn", "cliclick", "rightClick" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".exs": {
+            "keywords": [ ":os.cmd('xdotool", "System.cmd(\"xdotool\"", ":erlang.spawn", "cliclick" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".php": {
+            "keywords": [ "exec(\"xdotool", "shell_exec(\"xdotool\"", "system(\"xdotool", "COM('WScript.Shell').SendKeys", "SendKeys", "rightClick" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".tcl": {
+            "keywords": [ "exec xdotool key", "exec xdotool click", "twapi::send_keys", "twapi::send_keys +{F10}" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".groovy": {
+            "keywords": [ "java.awt.Robot", "keyPress", "keyRelease", "mousePress", "mouseRelease", "BUTTON3_DOWN_MASK" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".fs": {
+            "keywords": [ "System.Windows.Forms.SendKeys.SendWait", "InputSimulator.Keyboard.KeyPress", "InputSimulator.Mouse.RightButtonClick", "mouse_event", "MOUSEEVENTF_RIGHTDOWN" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".adb": {
+            "keywords": [ "Win32.Keybd_Event", "X11.XTest.FakeKeyEvent", "Win32.Mouse_Event", "MOUSEEVENTF_RIGHTDOWN" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".pas": {
+            "keywords": [ "keybd_event", "MouseAndKeyInput.MouseInput.Click", "mouse_event" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".pb": {
+            "keywords": [ "keybd_event_", "SendInput_", "mouse_event_" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".vi": {
+            "keywords": [ "keybd_event via Call Library Function Node" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".uasset": {
+            "keywords": [ "EMouseButtons::Right" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".sb3": {
+            "keywords": [ "Simulate Key" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".xml": {
+            "keywords": [ "KeyPress", "MouseClick", "RightClick", "document.dispatchEvent(new KeyboardEvent" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".xaml": {
+            "keywords": [ "Type Into", "Send Hotkey", "Click activity", "MouseButton.Right" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".atmx": {
+            "keywords": [ "Keystrokes command", "Simulate Keystrokes", "Mouse Click", "Right Click" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".bprelease": {
+            "keywords": [ "Global Send Keys", "Global Mouse Click" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".rxrec": {
+            "keywords": [ "Keyboard.Press", "Mouse.Click" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".tcs": {
+            "keywords": [ "TBox Send Keys", "TBox Right Click" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".script": {
+            "keywords": [ "TypeText", "PressKey", "RightClick" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".sikuli": {
+            "keywords": [ "type(\"g\")", "rightClick()", "mouseDown(Button.RIGHT)" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".pmc": {
+            "keywords": [ "Send,", "Click, Right" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".ttm": {
+            "keywords": [ "Recorded keystroke" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".qml": {
+            "keywords": [ "key \"g\"", "rig" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".mxe": {
+            "keywords": [ "Text Type:", "Mouse Right Click" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".kmmacros": {
+            "keywords": [ "TypeKeystroke", "ClickMouseButton" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".bttpreset": {
+            "keywords": [ "keyboardShortcut", "rightClick" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".bttp": {
+            "keywords": [ "keyboardShortcut", "rightClick" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".json": {
+            "keywords": [ "key_code", "pointing_button" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".ino": {
+            "keywords": [ "Keyboard.press", "Mouse.click" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".hex": {
+            "keywords": [ "SEND_STRING", "tap_code", "KC_BTN2" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".act": {
+            "keywords": [ "KeyPress: g", "RightClick action" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".xnr": {
+            "keywords": [ "fake.key press", "fake.button press" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".xbindkeysrc": {
+            "keywords": [ "xdotool key", "xdotool click" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".sxhkdrc": {
+            "keywords": [ "xdotool key", "xdotool click" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".wsf": {
+            "keywords": [ "WScript.CreateObject(\"WScript.Shell\").SendKeys" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".hta": {
+            "keywords": [ "new ActiveXObject(\"WScript.Shell\").SendKeys" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".wbt": {
+            "keywords": [ "SendKey(\"g\")", "RightClick()" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".kix": {
+            "keywords": [ "SendKeys(\"g\")" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".rex": {
+            "keywords": [ "xdotool key", "xdotool click" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".awk": {
+            "keywords": [ "system(\"xdotool key\"", "system(\"xdotool click\"" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".sed": {
+            "keywords": [ "e xdotool key", "e xdotool click" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".exp": {
+            "keywords": [ "exec xdotool key", "exec xdotool click" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".lisp": {
+            "keywords": [ "(uiop:run-program \"xdotool key\"", "(uiop:run-program \"xdotool click\"" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".rkt": {
+            "keywords": [ "(system \"xdotool key\"", "(system \"xdotool click\"" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".erl": {
+            "keywords": [ "os:cmd(\"xdotool key\"", "os:cmd(\"xdotool click\"" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".ml": {
+            "keywords": [ "Unix.system \"xdotool key\"", "Unix.system \"xdotool click\"" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".vala": {
+            "keywords": [ "Posix.system(\"xdotool key\"", "Posix.system(\"xdotool click\"" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".gs": {
+            "keywords": [ "Posix.system(\"xdotool key\"", "Posix.system(\"xdotool click\"" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".d": {
+            "keywords": [ "spawnShell(\"xdotool key\"", "spawnShell(\"xdotool click\"" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".zig": {
+            "keywords": [ "\"xdotool\", \"key\"", "\"xdotool\", \"click\"" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".v": {
+            "keywords": [ "os.system(\"xdotool key\"", "os.system(\"xdotool click\"" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".jl": {
+            "keywords": [ "run(xdotool key", "run(xdotool click" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".cr": {
+            "keywords": [ "Process.run(\"xdotool\", [\"key\"", "Process.run(\"xdotool\", [\"click\"" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".pony": {
+            "keywords": [ "@pony_os.send(\"xdotool key\"", "@pony_os.send(\"xdotool click\"" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".as": {
+            "keywords": [ "KeyboardEvent.KEY_DOWN", "MouseEvent.RIGHT_CLICK" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".hx": {
+            "keywords": [ "Sys.command(\"xdotool\", [\"key\"", "Sys.command(\"xdotool\", [\"click\"" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".elm": {
+            "keywords": [ "Browser.Events.onKeyDown" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".purs": {
+            "keywords": [ "document.dispatchEvent(new KeyboardEvent" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".re": {
+            "keywords": [ "KeyboardEvent.make", "MouseEvent.make" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".res": {
+            "keywords": [ "KeyboardEvent.make", "MouseEvent.make" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".cljs": {
+            "keywords": [ "(js/KeyboardEvent. \"keydown\"", "(js/MouseEvent. \"contextmenu\"" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".coffee": {
+            "keywords": [ "KeyboardEvent 'keydown'", "MouseEvent 'contextmenu'" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".ls": {
+            "keywords": [ "KeyboardEvent \\keydown", "MouseEvent \\contextmenu" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".pkl": {
+            "keywords": [ "pkl" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".dhall": {
+            "keywords": [ "dhall" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".nix": {
+            "keywords": [ "builtins.exec \"xdotool key\"", "builtins.exec \"xdotool click\"" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".scm": {
+            "keywords": [ "system \"xdotool key\"", "system \"xdotool click\"" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".st": {
+            "keywords": [ "OSProcess command: 'xdotool key'" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".io": {
+            "keywords": [ "System runCommand(\"xdotool key\"", "System runCommand(\"xdotool click\"" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".self": {
+            "keywords": [ "os command: 'xdotool key'" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".factor": {
+            "keywords": [ "\"xdotool key\" run-process", "\"xdotool click\" run-process" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".logo": {
+            "keywords": [ "shell \"xdotool key\"", "shell \"xdotool click\"" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".cbl": {
+            "keywords": [ "CALL \"SYSTEM\" USING \"xdotool key\"", "CALL \"SYSTEM\" USING \"xdotool click\"" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".cob": {
+            "keywords": [ "CALL \"SYSTEM\" USING \"xdotool key\"", "CALL \"SYSTEM\" USING \"xdotool click\"" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".f90": {
+            "keywords": [ "CALL SYSTEM(\"xdotool key\"", "CALL SYSTEM(\"xdotool click\"" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".f95": {
+            "keywords": [ "CALL SYSTEM(\"xdotool key\"", "CALL SYSTEM(\"xdotool click\"" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".alg": {
+            "keywords": [ "system(\"xdotool key\"", "system(\"xdotool click\"" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".pli": {
+            "keywords": [ "CALL SYSTEM('xdotool key'", "CALL SYSTEM('xdotool click'" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".rpg": {
+            "keywords": [ "CALL 'SYSTEM' 'xdotool key'", "CALL 'SYSTEM' 'xdotool click'" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".jcl": {
+            "keywords": [ "PARM='xdotool key'", "PARM='xdotool click'" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".cl": {
+            "keywords": [ "system(\"xdotool key\"", "system(\"xdotool click\"" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".cu": {
+            "keywords": [ "system(\"xdotool key\"", "system(\"xdotool click\"" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".vhd": {
+            "keywords": [ "vhd" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".sv": {
+            "keywords": [ "DPI-C to call system(\"xdotool key\"" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".abap": {
+            "keywords": [ "CALL 'SYSTEM' ID 'COMMAND' FIELD 'xdotool key'" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".cls": {
+            "keywords": [ "system" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".sol": {
+            "keywords": [ "solidity" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".vy": {
+            "keywords": [ "vyper" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".mod": {
+            "keywords": [ "SysCall('xdotool key'", "SysCall('xdotool click'" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".ob": {
+            "keywords": [ "SYSTEM.CMD('xdotool key'", "SYSTEM.CMD('xdotool click'" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".sim": {
+            "keywords": [ "External(\"xdotool key\"", "External(\"xdotool click\"" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".bcpl": {
+            "keywords": [ "system(\"xdotool key\"", "system(\"xdotool click\"" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".bli": {
+            "keywords": [ "$system(\"xdotool key\"", "$system(\"xdotool click\"" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".plm": {
+            "keywords": [ "CALL DOS('xdotool key'", "CALL DOS('xdotool click'" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".jov": {
+            "keywords": [ "PROC SYSTEM('xdotool key'", "PROC SYSTEM('xdotool click'" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".cms": {
+            "keywords": [ "SYS-CMD('xdotool key'", "SYS-CMD('xdotool click'" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".tacl": {
+            "keywords": [ "RUN xdotool key", "RUN xdotool click" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".com": {
+            "keywords": [ "$ xdotool key", "$ xdotool click" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".exec": {
+            "keywords": [ "ADDRESS TSO \"xdotool key\"", "ADDRESS TSO \"xdotool click\"" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".toe": {
+            "keywords": [ "keybd_event via Python CHOP" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".v4p": {
+            "keywords": [ "Keyboard (Devices) node", "SendKey node" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".maxpat": {
+            "keywords": [ "shell object calling xdotool" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".pd": {
+            "keywords": [ "[shell] calling xdotool key" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".scd": {
+            "keywords": [ "\"xdotool key\".unixCmd", "\"xdotool click\".unixCmd" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".pde": {
+            "keywords": [ "robot.keyPress", "robot.mousePress" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".user.js": {
+            "keywords": [ "dispatchEvent(new KeyboardEvent", "dispatchEvent(new MouseEvent('contextmenu'", "jQuery.trigger({type:'keydown'", "Simulate.keyPress", "rightClick" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".scpt": {
+            "keywords": [ "key code 5", "click button 2", "do shell script \"cliclick\"" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        },
+        ".applescript": {
+            "keywords": [ "key code 5", "click button 2", "do shell script \"cliclick\"" ],
+            "scorePerMatch": 0,
+            "baseScore": 3,
+            "requireMultiple": false
+        }
+    },
+    "vendorFolders": {},
+    "vendorIndicators": {}
+}
