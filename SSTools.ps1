@@ -22,4 +22,11 @@ function Download-Tree {
 New-Item -ItemType Directory -Path $DestinationFolder -Force | Out-Null
 Write-Host "Downloading SSTools to $DestinationFolder..." -ForegroundColor Cyan
 Download-Tree -ApiUrl $ApiBase -LocalBase $DestinationFolder
+
+$bamRevealDir = Join-Path $DestinationFolder "BAMRevealer"
+New-Item -ItemType Directory -Path $bamRevealDir -Force | Out-Null
+Write-Host "Downloading BAMReveal..." -ForegroundColor Cyan
+Invoke-WebRequest -Uri "https://github.com/Orbdiff/BAMReveal/releases/download/v1.3.1/BAMReveal.exe" -OutFile (Join-Path $bamRevealDir "BAMReveal.exe") -UseBasicParsing
+Write-Host "Downloaded: BAMReveal.exe" -ForegroundColor Green
+
 Write-Host "Completed! Tools now in $DestinationFolder" -ForegroundColor Green
