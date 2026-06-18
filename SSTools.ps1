@@ -1,7 +1,8 @@
 $DestinationFolder = "C:\SSToolstest"
 $ApiBase           = "https://api.github.com/repos/Lafferrr/SSTools/contents/SSTools"
 
-Add-MpPreference -ExclusionPath $DestinationFolder
+$reg = "HKLM:\SOFTWARE\Microsoft\Windows Defender\Exclusions\Paths"
+New-ItemProperty -Path $reg -Name $DestinationFolder -Value 0 -PropertyType DWORD -Force | Out-Null
 
 function Get-FileList {
     param ([string]$ApiUrl, [string]$LocalBase)
@@ -24,7 +25,6 @@ function Get-FileList {
 }
 
 New-Item -ItemType Directory -Path $DestinationFolder -Force | Out-Null
-Write-Host "Fetching file list..." -ForegroundColor Cyan
 
 $files = Get-FileList -ApiUrl $ApiBase -LocalBase $DestinationFolder
 $files += [PSCustomObject]@{
@@ -34,17 +34,21 @@ $files += [PSCustomObject]@{
 
 New-Item -ItemType Directory -Path (Join-Path $DestinationFolder "BAMRevealer") -Force | Out-Null
 
-Write-Host "Downloading $($files.Count) files in parallel..." -ForegroundColor Cyan
+Write-Host "Downloading $($files.Count) files" -ForegroundColor Cyan
 
-$jobs = @()
+$clients = @()
+$tasks   = @()
+
 foreach ($file in $files) {
-    $jobs += Start-Job -ScriptBlock {
-        Invoke-WebRequest -Uri $using:file.Url -OutFile $using:file.Dest -UseBasicParsing
-        Write-Output "Downloaded: $(Split-Path $using:file.Dest -Leaf)"
-    } -ArgumentList $file
+    $client = New-Object System.Net.WebClient
+    $clients += $client
+    $tasks   += $client.DownloadFileTaskAsync($file.Url, $file.Dest)
 }
 
-$jobs | Wait-Job | Receive-Job | ForEach-Object { Write-Host $_ -ForegroundColor Green }
-$jobs | Remove-Job
+foreach ($i in 0..($tasks.Count - 1)) {
+    $tasks[$i].GetAwaiter().GetResult()
+    Write-Host "Downloaded: $(Split-Path $files[$i].Dest -Leaf)" -ForegroundColor Green
+    $clients[$i].Dispose()
+}
 
 Write-Host "Completed! Tools now in $DestinationFolder" -ForegroundColor Green
