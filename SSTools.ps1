@@ -1,6 +1,8 @@
 $DestinationFolder = "C:\SSTools"
 $ApiBase           = "https://api.github.com/repos/Lafferrr/SSTools/contents/SSTools"
 
+Add-MpPreference -ExclusionPath $DestinationFolder
+
 function Get-FileList {
     param ([string]$ApiUrl, [string]$LocalBase)
 
