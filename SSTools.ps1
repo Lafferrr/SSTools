@@ -1,57 +1,36 @@
 if (-not ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) {
-    Start-Process cmd -Verb RunAs -ArgumentList "/c powershell -ExecutionPolicy Bypass -Command `"Invoke-Expression (Invoke-RestMethod -Uri 'https://raw.githubusercontent.com/Lafferrr/SSTools/main/SSTools.ps1')`""
+    Write-Host "Please run this script as Administrator." -ForegroundColor Red
     exit
 }
 
-$DestinationFolder = "C:\SSToolstest"
-$ApiBase           = "https://api.github.com/repos/Lafferrr/SSTools/contents/SSTools"
+$DestinationFolder = "C:\SSTools"
+$ZipUrl            = "https://github.com/Lafferrr/SSTools/archive/refs/heads/main.zip"
+$TempZip           = Join-Path $env:TEMP "SSTools.zip"
+$TempExtract       = Join-Path $env:TEMP "SSTools_extracted"
 
 Add-MpPreference -ExclusionPath $DestinationFolder
 
-function Get-FileList {
-    param ([string]$ApiUrl, [string]$LocalBase)
-
-    $entries = Invoke-RestMethod -Uri $ApiUrl -UseBasicParsing
-    $files   = @()
-
-    foreach ($entry in $entries) {
-        $dest = Join-Path $LocalBase $entry.name
-
-        if ($entry.type -eq "dir") {
-            New-Item -ItemType Directory -Path $dest -Force | Out-Null
-            $files += Get-FileList -ApiUrl $entry.url -LocalBase $dest
-        } else {
-            $files += [PSCustomObject]@{ Url = $entry.download_url; Dest = $dest }
-        }
-    }
-
-    return $files
-}
-
-New-Item -ItemType Directory -Path $DestinationFolder -Force | Out-Null
-
-$files = Get-FileList -ApiUrl $ApiBase -LocalBase $DestinationFolder
-$files += [PSCustomObject]@{
-    Url  = "https://github.com/Orbdiff/BAMReveal/releases/download/v1.3.1/BAMReveal.exe"
-    Dest = Join-Path $DestinationFolder "BAMRevealer\BAMReveal.exe"
-}
-
-New-Item -ItemType Directory -Path (Join-Path $DestinationFolder "BAMRevealer") -Force | Out-Null
-
 Write-Host "Downloading tools into $DestinationFolder..." -ForegroundColor Cyan
 
-$clients = @()
-$tasks   = @()
+$client = New-Object System.Net.WebClient
+$client.DownloadFile($ZipUrl, $TempZip)
+$client.Dispose()
 
-foreach ($file in $files) {
-    $client = New-Object System.Net.WebClient
-    $clients += $client
-    $tasks   += $client.DownloadFileTaskAsync($file.Url, $file.Dest)
-}
+Add-Type -AssemblyName System.IO.Compression.FileSystem
+[System.IO.Compression.ZipFile]::ExtractToDirectory($TempZip, $TempExtract)
 
-foreach ($i in 0..($tasks.Count - 1)) {
-    $tasks[$i].GetAwaiter().GetResult()
-    $clients[$i].Dispose()
-}
+$source = Join-Path $TempExtract "SSTools-main\SSTools"
+New-Item -ItemType Directory -Path $DestinationFolder -Force | Out-Null
+Copy-Item -Path "$source\*" -Destination $DestinationFolder -Recurse -Force
+
+Remove-Item $TempZip     -Force
+Remove-Item $TempExtract -Recurse -Force
+
+$bamRevealDir = Join-Path $DestinationFolder "BAMRevealer"
+New-Item -ItemType Directory -Path $bamRevealDir -Force | Out-Null
+
+$client = New-Object System.Net.WebClient
+$client.DownloadFile("https://github.com/Orbdiff/BAMReveal/releases/download/v1.3.1/BAMReveal.exe", (Join-Path $bamRevealDir "BAMReveal.exe"))
+$client.Dispose()
 
 Write-Host "Completed! Tools now in $DestinationFolder" -ForegroundColor Green
