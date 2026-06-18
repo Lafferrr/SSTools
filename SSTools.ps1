@@ -1,4 +1,4 @@
-$DestinationFolder = "C:\SSToolstest"
+$DestinationFolder = "C:\SSTools"
 $ApiBase           = "https://api.github.com/repos/Lafferrr/SSTools/contents/SSTools"
 
 function Get-FileList {
