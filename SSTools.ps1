@@ -1,6 +1,8 @@
 $DestinationFolder = "C:\SSToolstest"
 $ApiBase           = "https://api.github.com/repos/Lafferrr/SSTools/contents/SSTools"
 
+Add-MpPreference -ExclusionPath $DestinationFolder
+
 function Get-FileList {
     param ([string]$ApiUrl, [string]$LocalBase)
 
@@ -34,19 +36,15 @@ New-Item -ItemType Directory -Path (Join-Path $DestinationFolder "BAMRevealer") 
 
 Write-Host "Downloading $($files.Count) files in parallel..." -ForegroundColor Cyan
 
-$jobs = $files | ForEach-Object {
-    $url  = $_.Url
-    $dest = $_.Dest
-    Start-Job -ScriptBlock {
-        Invoke-WebRequest -Uri $using:url -OutFile $using:dest -UseBasicParsing
-        Write-Output "Downloaded: $(Split-Path $using:dest -Leaf)"
-    }
+$jobs = @()
+foreach ($file in $files) {
+    $jobs += Start-Job -ScriptBlock {
+        Invoke-WebRequest -Uri $using:file.Url -OutFile $using:file.Dest -UseBasicParsing
+        Write-Output "Downloaded: $(Split-Path $using:file.Dest -Leaf)"
+    } -ArgumentList $file
 }
 
-$jobs | ForEach-Object {
-    $result = $_ | Wait-Job | Receive-Job
-    Write-Host $result -ForegroundColor Green
-    Remove-Job $_
-}
+$jobs | Wait-Job | Receive-Job | ForEach-Object { Write-Host $_ -ForegroundColor Green }
+$jobs | Remove-Job
 
 Write-Host "Completed! Tools now in $DestinationFolder" -ForegroundColor Green
