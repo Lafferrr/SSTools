@@ -1,4 +1,4 @@
-$DestinationFolder = "C:\SSTools"
+$DestinationFolder = "C:\SSToolstest"
 $ApiBase           = "https://api.github.com/repos/Lafferrr/SSTools/contents/SSTools"
 
 Add-MpPreference -ExclusionPath $DestinationFolder
