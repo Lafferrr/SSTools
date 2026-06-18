@@ -3,7 +3,7 @@ if (-not ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdenti
     exit
 }
 
-$DestinationFolder = "C:\SSToolstest"
+$DestinationFolder = "C:\SSTools"
 $ZipUrl            = "https://github.com/Lafferrr/SSTools/archive/refs/heads/main.zip"
 $ZipPath           = Join-Path $DestinationFolder "SSTools.zip"
 
