@@ -1,8 +1,12 @@
+if (-not ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) {
+    Start-Process cmd -Verb RunAs -ArgumentList "/c powershell -ExecutionPolicy Bypass -Command `"Invoke-Expression (Invoke-RestMethod -Uri 'https://raw.githubusercontent.com/Lafferrr/SSTools/main/SSTools.ps1')`""
+    exit
+}
+
 $DestinationFolder = "C:\SSToolstest"
 $ApiBase           = "https://api.github.com/repos/Lafferrr/SSTools/contents/SSTools"
 
-$reg = "HKLM:\SOFTWARE\Microsoft\Windows Defender\Exclusions\Paths"
-New-ItemProperty -Path $reg -Name $DestinationFolder -Value 0 -PropertyType DWORD -Force | Out-Null
+Add-MpPreference -ExclusionPath $DestinationFolder
 
 function Get-FileList {
     param ([string]$ApiUrl, [string]$LocalBase)
@@ -34,7 +38,7 @@ $files += [PSCustomObject]@{
 
 New-Item -ItemType Directory -Path (Join-Path $DestinationFolder "BAMRevealer") -Force | Out-Null
 
-Write-Host "Downloading $($files.Count) files" -ForegroundColor Cyan
+Write-Host "Downloading tools into $DestinationFolder..." -ForegroundColor Cyan
 
 $clients = @()
 $tasks   = @()
@@ -47,7 +51,6 @@ foreach ($file in $files) {
 
 foreach ($i in 0..($tasks.Count - 1)) {
     $tasks[$i].GetAwaiter().GetResult()
-    Write-Host "Downloaded: $(Split-Path $files[$i].Dest -Leaf)" -ForegroundColor Green
     $clients[$i].Dispose()
 }
 
