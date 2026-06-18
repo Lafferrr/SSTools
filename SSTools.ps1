@@ -16,8 +16,28 @@ $wc.DownloadFile($ZipUrl, $ZipPath)
 $wc.Dispose()
 
 Add-Type -AssemblyName System.IO.Compression.FileSystem
-[System.IO.Compression.ZipFile]::ExtractToDirectory($ZipPath, $DestinationFolder)
+$zip = [System.IO.Compression.ZipFile]::OpenRead($ZipPath)
 
+foreach ($entry in $zip.Entries) {
+    if ($entry.FullName -notmatch '^[^/]+/SSTools/') { continue }
+
+    $relative = $entry.FullName -replace '^[^/]+/SSTools/', ''
+    if ($relative -eq '') { continue }
+
+    $destPath = Join-Path $DestinationFolder $relative
+
+    if ($entry.FullName.EndsWith('/')) {
+        New-Item -ItemType Directory -Path $destPath -Force | Out-Null
+    } else {
+        $dirPath = Split-Path $destPath -Parent
+        if (-not (Test-Path $dirPath)) {
+            New-Item -ItemType Directory -Path $dirPath -Force | Out-Null
+        }
+        [System.IO.Compression.ZipFileExtensions]::ExtractToFile($entry, $destPath, $true)
+    }
+}
+
+$zip.Dispose()
 Remove-Item $ZipPath -Force
 
 Write-Host "Completed! Tools now in $DestinationFolder" -ForegroundColor Green
