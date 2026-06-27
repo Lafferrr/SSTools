@@ -2,7 +2,7 @@ if (-not ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdenti
     Write-Host "Please run this script as Administrator." -ForegroundColor Red
     exit
 }
-$DestinationFolder = "C:\SSToolsTest"
+$DestinationFolder = "C:\SSTools"
 $ZipUrl            = "https://github.com/Lafferrr/SSTools/archive/refs/heads/main.zip"
 $ZipPath           = Join-Path $DestinationFolder "SSTools.zip"
 New-Item -ItemType Directory -Path $DestinationFolder -Force | Out-Null
