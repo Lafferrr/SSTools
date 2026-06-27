@@ -40,10 +40,6 @@ foreach ($entry in $zip.Entries) {
  $zip.Dispose()
 Remove-Item $ZipPath -Force
 
-Write-Host "Completed! Tools now in $DestinationFolder" -ForegroundColor Green
-
-Add-MpPreference -ExclusionPath "C:\SSToolsTest"
-
  $scriptPath = Join-Path $DestinationFolder "SSTools.ps1"
 if (Test-Path $scriptPath) {
     Unblock-File -Path $scriptPath
@@ -55,14 +51,8 @@ New-Item -ItemType Directory -Path "C:\SSToolsTest\BAMRevealer" -Force | Out-Nul
  $BAMRevealPath = Join-Path "C:\SSToolsTest\BAMRevealer" "BAMReveal.exe"
 Invoke-WebRequest -Uri $BAMRevealUrl -OutFile $BAMRevealPath
 
-try {
-    $otherAV = Get-WmiObject -Namespace "root\SecurityCenter2" -Class "AntiVirusProduct" -ErrorAction Stop
-    if ($otherAV -and $otherAV.productState -ne 262144) {
-        Write-Host "Other antivirus software is installed and might be blocking the script." -ForegroundColor Yellow
-        Write-Host "Please uninstall conflicting antivirus software if issues occur." -ForegroundColor Yellow
-    }
-} catch {
-    Write-Host "Could not check for other antivirus software." -ForegroundColor Yellow
-}
+Write-Host "Completed! Tools now in $DestinationFolder" -ForegroundColor Green
+
+Add-MpPreference -ExclusionPath "C:\SSToolsTest"
 
 Invoke-Item "C:\SSToolsTest"
